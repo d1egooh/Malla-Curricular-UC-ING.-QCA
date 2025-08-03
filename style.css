@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.malla-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ano {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 45%;
+    min-width: 300px;
+}
+
+.semestre {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.semestre h3 {
+    text-align: center;
+    margin-top: 0;
+    color: #555;
+}
+
+.ramo {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estado inicial: no aprobado (celeste) */
+.ramo {
+    background-color: #add8e6;
+    color: #333;
+}
+
+/* Estado aprobado (azul y tachado) */
+.ramo.aprobado {
+    background-color: #007bff;
+    color: white;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+/* Estado bloqueado (gris) */
+.ramo.bloqueado {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+    pointer-events: none; /* Evita clics */
+}
+
+.ramo .sigla {
+    font-weight: bold;
+    margin: 0;
+}
+
+.ramo .nombre {
+    font-size: 0.9em;
+    margin: 0;
+}
