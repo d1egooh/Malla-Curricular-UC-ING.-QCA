@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Malla Curricular de Ingeniería Química UC</h1>
+    </header>
+
+    <main class="malla-container">
+
+        <div class="ano">
+            <h2>Primer Año</h2>
+            <div class="semestre" id="semestre-1">
+                <h3>Primer Semestre</h3>
+                <div class="ramo" id="MAT1000" data-prerequisitos="">
+                    <p class="sigla">MAT1000</p>
+                    <p class="nombre">Precálculo</p>
+                </div>
+                <div class="ramo" id="FIS1503" data-prerequisitos="">
+                    <p class="sigla">FIS1503</p>
+                    <p class="nombre">Física General I</p>
+                </div>
+                <div class="ramo" id="BIO141C" data-prerequisitos="">
+                    <p class="sigla">BIO141C</p>
+                    <p class="nombre">Biología de la Célula</p>
+                </div>
+                <div class="ramo" id="QIM100" data-prerequisitos="">
+                    <p class="sigla">QIM100</p>
+                    <p class="nombre">Química General I</p>
+                </div>
+                <div class="ramo" id="AFG1" data-prerequisitos="">
+                    <p class="sigla">AFG</p>
+                    <p class="nombre">Ecología Integral</p>
+                </div>
+                <div class="ramo" id="CLG0901" data-prerequisitos="">
+                    <p class="sigla">CLG0901</p>
+                    <p class="nombre">Taller de Iniciación</p>
+                </div>
+            </div>
+
+            <div class="semestre" id="semestre-2">
+                <h3>Segundo Semestre</h3>
+                <div class="ramo" id="MAT1610" data-prerequisitos="MAT1000">
+                    <p class="sigla">MAT1610</p>
+                    <p class="nombre">Cálculo I</p>
+                </div>
+                <div class="ramo" id="ING1004" data-prerequisitos="">
+                    <p class="sigla">ING1004</p>
+                    <p class="nombre">Desafíos de la Ingeniería</p>
+                </div>
+                <div class="ramo" id="MAT1203" data-prerequisitos="MAT1000">
+                    <p class="sigla">MAT1203</p>
+                    <p class="nombre">Álgebra Lineal</p>
+                </div>
+                <div class="ramo" id="BIO143M" data-prerequisitos="">
+                    <p class="sigla">BIO143M</p>
+                    <p class="nombre">Principios Ecológicos y Medio Ambiente</p>
+                </div>
+                <div class="ramo" id="FIL2001" data-prerequisitos="">
+                    <p class="sigla">FIL2001</p>
+                    <p class="nombre">Filosofía: ¿Para qué?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ano">
+            <h2>Segundo Año</h2>
+            <div class="semestre" id="semestre-3">
+                <h3>Tercer Semestre</h3>
+                <div class="ramo" id="MAT1620" data-prerequisitos="MAT1610">
+                    <p class="sigla">MAT1620</p>
+                    <p class="nombre">Cálculo II</p>
+                </div>
+                <div class="ramo" id="FIS1514" data-prerequisitos="FIS1503 MAT1203">
+                    <p class="sigla">FIS1514</p>
+                    <p class="nombre">Dinámica</p>
+                </div>
+                <div class="ramo" id="FIS0154" data-prerequisitos="">
+                    <p class="sigla">FIS0154</p>
+                    <p class="nombre">Laboratorio de Dinámica</p>
+                </div>
+                <div class="ramo" id="QIM100B" data-prerequisitos="QIM100">
+                    <p class="sigla">QIM100B</p>
+                    <p class="nombre">Química General II</p>
+                </div>
+                <div class="ramo" id="IIC1103" data-prerequisitos="">
+                    <p class="sigla">IIC1103</p>
+                    <p class="nombre">Introducción a la Programación</p>
+                </div>
+                <div class="ramo" id="EAE105A" data-prerequisitos="">
+                    <p class="sigla">EAE105A</p>
+                    <p class="nombre">Introducción a la Economía</p>
+                </div>
+            </div>
+
+            <div class="semestre" id="semestre-4">
+                <h3>Cuarto Semestre</h3>
+                <div class="ramo" id="MAT1630" data-prerequisitos="MAT1620 MAT1203">
+                    <p class="sigla">MAT1630</p>
+                    <p class="nombre">Cálculo III</p>
+                </div>
+                <div class="ramo" id="MAT1640" data-prerequisitos="MAT1620 MAT1203">
+                    <p class="sigla">MAT1640</p>
+                    <p class="nombre">Ecuaciones Diferenciales</p>
+                </div>
+                <div class="ramo" id="FIS1523" data-prerequisitos="">
+                    <p class="sigla">FIS1523</p>
+                    <p class="nombre">Termodinámica</p>
+                </div>
+                <div class="ramo" id="FIS0152" data-prerequisitos="">
+                    <p class="sigla">FIS0152</p>
+                    <p class="nombre">Laboratorio de Termodinámica</p>
+                </div>
+                <div class="ramo" id="QIM200" data-prerequisitos="QIM100 QIM100B">
+                    <p class="sigla">QIM200</p>
+                    <p class="nombre">Química Orgánica Fundamental</p>
+                </div>
+                <div class="ramo" id="AFG2" data-prerequisitos="">
+                    <p class="sigla">AFG</p>
+                    <p class="nombre">Ciencias Sociales</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ano">
+            <h2>Tercer Año</h2>
+            <div class="semestre" id="semestre-5">
+                <h3>Quinto Semestre</h3>
+                <div class="ramo" id="EYP1113" data-prerequisitos="MAT1630">
+                    <p class="sigla">EYP1113</p>
+                    <p class="nombre">Probabilidad y Estadística</p>
+                </div>
+                <div class="ramo" id="FIS1533" data-prerequisitos="MAT1630">
+                    <p class="sigla">FIS1533</p>
+                    <p class="nombre">Electricidad y Magnetismo</p>
+                </div>
+                <div class="ramo" id="FIS0153" data-prerequisitos="">
+                    <p class="sigla">FIS0153</p>
+                    <p class="nombre">Lab. Electricidad y Magnetismo</p>
+                </div>
+                <div class="ramo" id="IIQ2043" data-prerequisitos="FIS1523 QIM100B">
+                    <p class="sigla">IIQ2043</p>
+                    <p class="nombre">Fisicoquímica</p>
+                </div>
+                <div class="ramo" id="AFG3" data-prerequisitos="">
+                    <p class="sigla">AFG</p>
+                    <p class="nombre">Salud y Bienestar</p>
+                </div>
+                <div class="ramo" id="TEO1" data-prerequisitos="">
+                    <p class="sigla">TEO</p>
+                    <p class="nombre">Teología</p>
+                </div>
+            </div>
+
+            <div class="semestre" id="semestre-6">
+                <h3>Sexto Semestre</h3>
+                <div class="ramo" id="QIM202" data-prerequisitos="QIM200">
+                    <p class="sigla">QIM202</p>
+                    <p class="nombre">Bioquímica General</p>
+                </div>
+                <div class="ramo" id="IIQ2003" data-prerequisitos="MAT1640">
+                    <p class="sigla">IIQ2003</p>
+                    <p class="nombre">Fenómenos de Transporte</p>
+                </div>
+                <div class="ramo" id="IIQ2133" data-prerequisitos="FIS1523 QIM100B">
+                    <p class="sigla">IIQ2133</p>
+                    <p class="nombre">Procesos Químicos</p>
+                </div>
+                <div class="ramo" id="IIQ2930" data-prerequisitos="FIS1523">
+                    <p class="sigla">IIQ2930</p>
+                    <p class="nombre">Introducción a la Ing. Gastronómica</p>
+                </div>
+                <div class="ramo" id="AFG4" data-prerequisitos="">
+                    <p class="sigla">AFG</p>
+                    <p class="nombre">Artes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ano">
+            <h2>Cuarto Año</h2>
+            <div class="semestre" id="semestre-7">
+                <h3>Séptimo Semestre</h3>
+                <div class="ramo" id="IIQ2013" data-prerequisitos="IIQ2003">
+                    <p class="sigla">IIQ2013</p>
+                    <p class="nombre">Operaciones Unitarias I</p>
+                </div>
+                <div class="ramo" id="IIQ2023" data-prerequisitos="IIQ2003">
+                    <p class="sigla">IIQ2023</p>
+                    <p class="nombre">Operaciones Unitarias II</p>
+                </div>
+                <div class="ramo" id="IIQ2623" data-prerequisitos="QIM202">
+                    <p class="sigla">IIQ2623</p>
+                    <p class="nombre">Microbiología e Higiene de Alimentos</p>
+                </div>
+                <div class="ramo" id="IIQ2723" data-prerequisitos="IIQ2133">
+                    <p class="sigla">IIQ2723</p>
+                    <p class="nombre">Ingeniería de Alimentos</p>
+                </div>
+                <div class="ramo" id="AFG5" data-prerequisitos="">
+                    <p class="sigla">AFG</p>
+                    <p class="nombre">Humanidades</p>
+                </div>
+            </div>
+
+            <div class="semestre" id="semestre-8">
+                <h3>Octavo Semestre</h3>
+                <div class="ramo" id="IIQ2243" data-prerequisitos="IIQ2013 IIQ2023">
+                    <p class="sigla">IIQ2243</p>
+                    <p class="nombre">CAPSTONE: Diseño de Procesos Químicos</p>
+                </div>
+                <div class="ramo" id="IIQ2313" data-prerequisitos="IIQ2013">
+                    <p class="sigla">IIQ2313</p>
+                    <p class="nombre">Dinámica y Control de Procesos</p>
+                </div>
+                <div class="ramo" id="IIQ2113" data-prerequisitos="">
+                    <p class="sigla">IIQ2113</p>
+                    <p class="nombre">Diseño de Reactores</p>
+                </div>
+                <div class="ramo" id="IIQ2603" data-prerequisitos="IIQ2133">
+                    <p class="sigla">IIQ2603</p>
+                    <p class="nombre">Ciencia de los Alimentos</p>
+                </div>
+                <div class="ramo" id="IIQ2633" data-prerequisitos="QIM202">
+                    <p class="sigla">IIQ2633</p>
+                    <p class="nombre">Química y Análisis de Alimentos</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
